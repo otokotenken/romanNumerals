@@ -98,4 +98,14 @@ class RomanNumeralsKataTests: XCTestCase {
     func testInputIsNumberNinety() {
         XCTAssertEqual(RomanNumerals.arabicToRoman(number: 90), "XC")
     }
+    func testInputIsNumberFourHundredfive() {
+        XCTAssertEqual(RomanNumerals.arabicToRoman(number: 405), "CDV")
+    }
+    func testInputIsNumberSixHundred() {
+        XCTAssertEqual(RomanNumerals.arabicToRoman(number: 600), "DC")
+    }
+    func testInputisNumberNineteenHundred() {
+        XCTAssertEqual(RomanNumerals.arabicToRoman(number: 1900), "MCM")
+    }
+    
 }

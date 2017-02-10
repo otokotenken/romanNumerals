@@ -29,9 +29,7 @@ class RomanNumerals {
             inputNumber -= arabicValue * div
             }
     }
-    
     return numeralString
 }
-
 
 }

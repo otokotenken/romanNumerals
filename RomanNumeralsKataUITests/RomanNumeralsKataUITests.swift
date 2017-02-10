@@ -1,3 +1,4 @@
+
 //
 //  RomanNumeralsKataUITests.swift
 //  RomanNumeralsKataUITests
@@ -31,6 +32,14 @@ class RomanNumeralsKataUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testIfTextfieldIsWorking() {
+        let app = XCUIApplication()
+        let textField = app.textFields["inputTextField"]
+        textField.tap()
+        textField.typeText("42")
+        app.buttons["testButton"].tap()
     }
     
 }

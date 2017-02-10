@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,30 +22,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YEY-bd-L7g">
-                                <rect key="frame" x="139" y="125" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YEY-bd-L7g">
+                                <rect key="frame" x="83" y="125" width="213" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="inputTextField"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9L-4c-m3e">
-                                <rect key="frame" x="164" y="240" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9L-4c-m3e">
+                                <rect key="frame" x="135" y="240" width="105" height="34"/>
+                                <accessibility key="accessibilityConfiguration" label="testButton"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="EBP-pQ-NGt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Test Me!"/>
                                 <connections>
                                     <action selector="testButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwq-dO-1sY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1Q-w8-R2m">
+                                <rect key="frame" x="37" y="366" width="301" height="208"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="208" id="9Vc-dQ-8hY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="h1Q-w8-R2m" secondAttribute="bottom" constant="93" id="0dl-P3-QsN"/>
+                            <constraint firstItem="H9L-4c-m3e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Xh-oD-p2s"/>
+                            <constraint firstItem="YEY-bd-L7g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="5Sv-Os-R8U"/>
+                            <constraint firstItem="h1Q-w8-R2m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="IjC-jC-4ta"/>
+                            <constraint firstItem="YEY-bd-L7g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="105" id="Qtr-Y7-fGc"/>
+                            <constraint firstItem="H9L-4c-m3e" firstAttribute="top" secondItem="YEY-bd-L7g" secondAttribute="bottom" constant="85" id="X2H-G9-uJd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YEY-bd-L7g" secondAttribute="trailing" constant="63" id="pyo-Vj-YPe"/>
+                            <constraint firstItem="h1Q-w8-R2m" firstAttribute="centerX" secondItem="H9L-4c-m3e" secondAttribute="centerX" id="udn-jZ-ES0"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="inputTextField" destination="YEY-bd-L7g" id="paV-gI-MEd"/>
+                        <outlet property="resultsLabel" destination="h1Q-w8-R2m" id="8pT-aF-8Up"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
 </document>
