@@ -15,6 +15,8 @@
 		43BB85961E4CD67900CBDFE8 /* RomanNumeralsKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB85951E4CD67900CBDFE8 /* RomanNumeralsKataTests.swift */; };
 		43BB85A11E4CD67900CBDFE8 /* RomanNumeralsKataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB85A01E4CD67900CBDFE8 /* RomanNumeralsKataUITests.swift */; };
 		43BB85AF1E4CFFFC00CBDFE8 /* RomanNumerals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB85AE1E4CFFFC00CBDFE8 /* RomanNumerals.swift */; };
+		43BB85B31E4E364100CBDFE8 /* ArabicNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB85B21E4E364100CBDFE8 /* ArabicNumbers.swift */; };
+		43BB85B51E4E378C00CBDFE8 /* arabicToRomanTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB85B41E4E378C00CBDFE8 /* arabicToRomanTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		43BB85A01E4CD67900CBDFE8 /* RomanNumeralsKataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanNumeralsKataUITests.swift; sourceTree = "<group>"; };
 		43BB85A21E4CD67900CBDFE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43BB85AE1E4CFFFC00CBDFE8 /* RomanNumerals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RomanNumerals.swift; sourceTree = "<group>"; };
+		43BB85B21E4E364100CBDFE8 /* ArabicNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArabicNumbers.swift; sourceTree = "<group>"; };
+		43BB85B41E4E378C00CBDFE8 /* arabicToRomanTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = arabicToRomanTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		43BB85741E4CD67800CBDFE8 = {
 			isa = PBXGroup;
 			children = (
+				43BB85B21E4E364100CBDFE8 /* ArabicNumbers.swift */,
 				43BB85AE1E4CFFFC00CBDFE8 /* RomanNumerals.swift */,
 				43BB857F1E4CD67900CBDFE8 /* RomanNumeralsKata */,
 				43BB85941E4CD67900CBDFE8 /* RomanNumeralsKataTests */,
@@ -115,6 +120,7 @@
 			children = (
 				43BB85951E4CD67900CBDFE8 /* RomanNumeralsKataTests.swift */,
 				43BB85971E4CD67900CBDFE8 /* Info.plist */,
+				43BB85B41E4E378C00CBDFE8 /* arabicToRomanTest.swift */,
 			);
 			path = RomanNumeralsKataTests;
 			sourceTree = "<group>";
@@ -262,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43BB85B31E4E364100CBDFE8 /* ArabicNumbers.swift in Sources */,
 				43BB85831E4CD67900CBDFE8 /* ViewController.swift in Sources */,
 				43BB85811E4CD67900CBDFE8 /* AppDelegate.swift in Sources */,
 				43BB85AF1E4CFFFC00CBDFE8 /* RomanNumerals.swift in Sources */,
@@ -272,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43BB85B51E4E378C00CBDFE8 /* arabicToRomanTest.swift in Sources */,
 				43BB85961E4CD67900CBDFE8 /* RomanNumeralsKataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
